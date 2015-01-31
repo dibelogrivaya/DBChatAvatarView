@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>10B41D6B-9EAB-4FAD-961D-85967C747706</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DBChatAvatarSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7C6D8829EB56B843AF8882F0B1303E36C7A26DB6</key>
+		<string>github.com:medinaonly/DBChatAvatarSample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DBChatAvatarSample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7C6D8829EB56B843AF8882F0B1303E36C7A26DB6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:medinaonly/DBChatAvatarSample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7C6D8829EB56B843AF8882F0B1303E36C7A26DB6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7C6D8829EB56B843AF8882F0B1303E36C7A26DB6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DBChatAvatarSample</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -18,10 +18,10 @@
 		26172A8D1A7D203B006BA402 /* DBChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172A8C1A7D203B006BA402 /* DBChatCell.m */; };
 		26172A901A7D20DF006BA402 /* DBChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172A8F1A7D20DF006BA402 /* DBChatManager.m */; };
 		26172A921A7D282A006BA402 /* DBAvatars.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26172A911A7D282A006BA402 /* DBAvatars.xcassets */; };
-		26172A961A7D2BB6006BA402 /* DBChatAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172A951A7D2BB6006BA402 /* DBChatAvatarView.m */; };
-		26172A991A7D2BC1006BA402 /* DBAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172A981A7D2BC1006BA402 /* DBAvatarView.m */; };
 		26172AA21A7D2F22006BA402 /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172AA11A7D2F22006BA402 /* UIColor+HEX.m */; };
 		26172AA61A7D3068006BA402 /* UIImage+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172AA51A7D3068006BA402 /* UIImage+Default.m */; };
+		26172AAD1A7D4350006BA402 /* DBAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172AAA1A7D4350006BA402 /* DBAvatarView.m */; };
+		26172AAE1A7D4350006BA402 /* DBChatAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172AAC1A7D4350006BA402 /* DBChatAvatarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,14 +44,14 @@
 		26172A8E1A7D20DF006BA402 /* DBChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBChatManager.h; sourceTree = "<group>"; };
 		26172A8F1A7D20DF006BA402 /* DBChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBChatManager.m; sourceTree = "<group>"; };
 		26172A911A7D282A006BA402 /* DBAvatars.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DBAvatars.xcassets; sourceTree = "<group>"; };
-		26172A941A7D2BB6006BA402 /* DBChatAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBChatAvatarView.h; sourceTree = "<group>"; };
-		26172A951A7D2BB6006BA402 /* DBChatAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBChatAvatarView.m; sourceTree = "<group>"; };
-		26172A971A7D2BC1006BA402 /* DBAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAvatarView.h; sourceTree = "<group>"; };
-		26172A981A7D2BC1006BA402 /* DBAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAvatarView.m; sourceTree = "<group>"; };
 		26172AA01A7D2F22006BA402 /* UIColor+HEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEX.h"; sourceTree = "<group>"; };
 		26172AA11A7D2F22006BA402 /* UIColor+HEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
 		26172AA41A7D3068006BA402 /* UIImage+Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Default.h"; sourceTree = "<group>"; };
 		26172AA51A7D3068006BA402 /* UIImage+Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Default.m"; sourceTree = "<group>"; };
+		26172AA91A7D4350006BA402 /* DBAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAvatarView.h; sourceTree = "<group>"; };
+		26172AAA1A7D4350006BA402 /* DBAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAvatarView.m; sourceTree = "<group>"; };
+		26172AAB1A7D4350006BA402 /* DBChatAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBChatAvatarView.h; sourceTree = "<group>"; };
+		26172AAC1A7D4350006BA402 /* DBChatAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBChatAvatarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 			children = (
 				26172A571A7D1D39006BA402 /* AppDelegate.h */,
 				26172A581A7D1D39006BA402 /* AppDelegate.m */,
+				26172AA71A7D4339006BA402 /* External */,
 				26172A7A1A7D1D8E006BA402 /* Classes */,
-				26172A811A7D1DA4006BA402 /* External */,
 				26172A791A7D1D76006BA402 /* Resources */,
 				26172A531A7D1D39006BA402 /* Supporting Files */,
 			);
@@ -156,25 +156,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		26172A811A7D1DA4006BA402 /* External */ = {
-			isa = PBXGroup;
-			children = (
-				26172A931A7D2BA8006BA402 /* DBChatAvatarView */,
-			);
-			path = External;
-			sourceTree = "<group>";
-		};
-		26172A931A7D2BA8006BA402 /* DBChatAvatarView */ = {
-			isa = PBXGroup;
-			children = (
-				26172A941A7D2BB6006BA402 /* DBChatAvatarView.h */,
-				26172A951A7D2BB6006BA402 /* DBChatAvatarView.m */,
-				26172A971A7D2BC1006BA402 /* DBAvatarView.h */,
-				26172A981A7D2BC1006BA402 /* DBAvatarView.m */,
-			);
-			path = DBChatAvatarView;
-			sourceTree = "<group>";
-		};
 		26172A9E1A7D2F22006BA402 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +181,26 @@
 				26172AA51A7D3068006BA402 /* UIImage+Default.m */,
 			);
 			path = "UIImage+";
+			sourceTree = "<group>";
+		};
+		26172AA71A7D4339006BA402 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				26172AA81A7D4350006BA402 /* DBChatAvatarView */,
+			);
+			name = External;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		26172AA81A7D4350006BA402 /* DBChatAvatarView */ = {
+			isa = PBXGroup;
+			children = (
+				26172AA91A7D4350006BA402 /* DBAvatarView.h */,
+				26172AAA1A7D4350006BA402 /* DBAvatarView.m */,
+				26172AAB1A7D4350006BA402 /* DBChatAvatarView.h */,
+				26172AAC1A7D4350006BA402 /* DBChatAvatarView.m */,
+			);
+			path = DBChatAvatarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,11 +278,11 @@
 				26172A8A1A7D2011006BA402 /* DBChatsController.m in Sources */,
 				26172A8D1A7D203B006BA402 /* DBChatCell.m in Sources */,
 				26172AA61A7D3068006BA402 /* UIImage+Default.m in Sources */,
-				26172A991A7D2BC1006BA402 /* DBAvatarView.m in Sources */,
 				26172A841A7D1DD7006BA402 /* DBChat.m in Sources */,
+				26172AAD1A7D4350006BA402 /* DBAvatarView.m in Sources */,
 				26172A591A7D1D39006BA402 /* AppDelegate.m in Sources */,
 				26172A561A7D1D39006BA402 /* main.m in Sources */,
-				26172A961A7D2BB6006BA402 /* DBChatAvatarView.m in Sources */,
+				26172AAE1A7D4350006BA402 /* DBChatAvatarView.m in Sources */,
 				26172A871A7D1DE3006BA402 /* DBUser.m in Sources */,
 				26172A901A7D20DF006BA402 /* DBChatManager.m in Sources */,
 				26172AA21A7D2F22006BA402 /* UIColor+HEX.m in Sources */,
