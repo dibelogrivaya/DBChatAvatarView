@@ -108,7 +108,7 @@
     @autoreleasepool {
         NSInteger chatCount = 100;
         for (int i = 0; i < chatCount; i++) {
-            NSInteger userCount = 1 + arc4random() % 3;
+            NSInteger userCount = MAX(1, arc4random_uniform(5));
             NSMutableArray *users = [NSMutableArray new];
             for (int j = 0; j < userCount; j++) {
                 DBUser *user = [DBUser userWithName:[self randomName] avatar:[self randomAvatar] onlineStatus:[self randomStatus]];
