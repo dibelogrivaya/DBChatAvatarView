@@ -1,10 +1,12 @@
 # DBChatAvatarSample
 
-Sample for DBChatAvatarView - a control, which allow you to create group avatar such as that for a chat.
+Sample for DBChatAvatarView - a control, which allow you to create group avatar for a chat.
 
 
 ![Sample screen](https://github.com/medinaonly/DBChatAvatarSample/blob/master/Screens/SampleScreen.png)
 
+# CocoaControls
+https://www.cocoacontrols.com/controls/dbchatavatarsample
 
 # License
 
