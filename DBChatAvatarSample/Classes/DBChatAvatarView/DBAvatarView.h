@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DBAvatarView : UIView
-
+   
 @property (strong, nonatomic) UIColor *avatarStateColor;
 @property (strong, nonatomic) UIImage *avatarImage;
 

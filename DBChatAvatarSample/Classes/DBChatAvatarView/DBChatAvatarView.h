@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger, DBChatAvatarState) {
     DBChatAvatarStateOffline,
     DBChatAvatarStateOnline
 };
-
+  
 @protocol DBChatAvatarViewDataSource <NSObject>
 
 - (NSInteger)numberOfUsersInChatAvatarView:(DBChatAvatarView *)chatAvatarView;

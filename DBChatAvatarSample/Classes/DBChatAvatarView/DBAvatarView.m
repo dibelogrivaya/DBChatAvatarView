@@ -54,7 +54,7 @@
     CGContextMoveToPoint(mainMaskContextRef, 0, 0);
     CGContextAddEllipseInRect(mainMaskContextRef, imageRect);
     CGContextFillPath(mainMaskContextRef);
-    
+      
     CGImageRef mainMaskImageRef = CGBitmapContextCreateImage(mainMaskContextRef);
     CGContextRelease(mainMaskContextRef);
     
