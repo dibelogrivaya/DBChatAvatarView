@@ -7,8 +7,25 @@
 
 #import <UIKit/UIKit.h>
 
+@class DBChatAvatarView;
+
+typedef NS_ENUM(NSInteger, DBChatAvatarState) {
+    DBChatAvatarStateOffline,
+    DBChatAvatarStateOnline
+};
+
+@protocol DBChatAvatarViewDataSource <NSObject>
+
+- (NSInteger)numberOfUsersInChatAvatarView:(DBChatAvatarView *)chatAvatarView;
+- (DBChatAvatarState)stateForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarUserView:(DBChatAvatarView *)chatAvatarView;
+- (UIImage *)imageForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarUserView:(DBChatAvatarView *)chatAvatarView;
+
+@end
+
 @interface DBChatAvatarView : UIView
 
-- (void)updateWithUsers:(NSArray *)users;
+@property (weak, nonatomic) id <DBChatAvatarViewDataSource> chatAvatarDataSource;
+
+- (void)reloadAvatars;
 
 @end

@@ -7,10 +7,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class DBUser;
-
 @interface DBAvatarView : UIView
 
-@property (strong, nonatomic) DBUser *user;
+@property (strong, nonatomic) UIColor *avatarStateColor;
+@property (strong, nonatomic) UIImage *avatarImage;
 
 @end

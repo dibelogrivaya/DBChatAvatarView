@@ -7,10 +7,7 @@
 
 #import "DBAvatarView.h"
 
-#import "DBUser.h"
-
 #import "UIColor+HEX.h"
-#import "UIImage+Default.h"
 
 @implementation DBAvatarView
 
@@ -39,14 +36,6 @@
     self.backgroundColor = [UIColor clearColor];
 }
 
-- (UIColor *)statusColor {
-    return _user.isOnline ? [UIColor colorWithRGB:0x91D66E] : [UIColor colorWithRGB:0xE46663];
-}
-
-- (UIImage *)avatarImage {
-    return (_user.avatar != nil && _user.avatar.length > 0) ? [UIImage imageNamed:_user.avatar] : [UIImage defaultUserPlaceholder];
-}
-
 - (void)drawRect:(CGRect)rect {
     CGFloat kMainBorderWidth = 1.f;
     CGRect imageRect = CGRectMake((kMainBorderWidth), (kMainBorderWidth) , rect.size.width - (kMainBorderWidth * 2), rect.size.height - (kMainBorderWidth * 2));
@@ -71,7 +60,7 @@
     
     CGContextRef contextRef = UIGraphicsGetCurrentContext();
     CGContextSaveGState(contextRef);
-    CGImageRef imageRef = CGImageCreateWithMask([self avatarImage].CGImage, mainMaskImageRef);
+    CGImageRef imageRef = CGImageCreateWithMask(_avatarImage.CGImage, mainMaskImageRef);
     CGContextTranslateCTM(contextRef, 0, rect.size.height);
     CGContextScaleCTM(contextRef, 1.0, -1.0);
     CGContextSaveGState(contextRef);
@@ -91,7 +80,7 @@
     
     CGContextRestoreGState(contextRef);
     CGContextSaveGState(contextRef);
-    CGContextSetFillColorWithColor(contextRef, [self statusColor].CGColor);
+    CGContextSetFillColorWithColor(contextRef, _avatarStateColor.CGColor);
     CGContextAddEllipseInRect(contextRef, statusRect);
     CGContextFillPath(contextRef);
     

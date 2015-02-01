@@ -428,6 +428,7 @@
 				26172A751A7D1D3A006BA402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
