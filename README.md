@@ -10,11 +10,12 @@ Sample for DBChatAvatarView - a control, which allow you to create group avatar 
 
 ## Installation
 
-Copy files `DBChatAvatarView.h` and `DBAvatarView.m` into your project.
+Copy files `DBChatAvatarView`, `DBAvatarView` and category `UIColor+HEX` into your project.
 
 ## Usage
 
 Create a new DBChatAvatarView with Storyboards or via code.
+Import `DBChatAvatarView.h` in your cell
 
 ```objc
 DBChatAvatarView *chatAvatarView = [[DBChatAvatarView alloc] initWithFrame:frame];
