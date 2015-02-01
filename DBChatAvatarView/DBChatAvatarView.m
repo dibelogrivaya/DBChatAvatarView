@@ -7,6 +7,7 @@
 
 #import "DBChatAvatarView.h"
 
+#import "UIColor+HEX.h"
 #import "DBAvatarView.h"
 
 static const NSInteger kMaxVisibleAvatar = 4;
@@ -65,9 +66,10 @@ static const NSInteger kMaxVisibleAvatar = 4;
     self.vwAvatar4.hidden = YES;
     [self addSubview:self.vwAvatar4];
 }
-
-- (void)updateWithUsers:(NSArray *)users {
-    self.totalCount = MIN(kMaxVisibleAvatar, users.count);
+   
+- (void)reloadAvatars {
+    NSInteger usersCount = [self.chatAvatarDataSource numberOfUsersInChatAvatarView:self];
+    self.totalCount = MIN(kMaxVisibleAvatar, usersCount);
     
     self.vwAvatar1.hidden = YES;
     self.vwAvatar2.hidden = YES;
@@ -80,73 +82,46 @@ static const NSInteger kMaxVisibleAvatar = 4;
         
         if (self.totalCount == 1) {
             width = floorf(size.width);
-            
-            self.vwAvatar1.user = users[0];
-            self.vwAvatar1.hidden = NO;
-            self.vwAvatar1.frame = CGRectMake(0, 0, width, width);
-            [self.vwAvatar1 setNeedsDisplay];
-            
+            [self updateAvatarView:self.vwAvatar1 atIndex:0 withFrame:CGRectMake(0, 0, width, width)];
             return;
         }
         
         if (self.totalCount == 2) {
             width = floorf(size.width * 0.7);
-            
-            self.vwAvatar1.user = users[0];
-            self.vwAvatar1.hidden = NO;
-            self.vwAvatar1.frame = CGRectMake(0, (size.height - width), width, width);
-            [self.vwAvatar1 setNeedsDisplay];
-            
-            self.vwAvatar2.user = users[1];
-            self.vwAvatar2.hidden = NO;
-            self.vwAvatar2.frame = CGRectMake((size.width - width), 0, width, width);
-            [self.vwAvatar2 setNeedsDisplay];
-            
+            [self updateAvatarView:self.vwAvatar1 atIndex:0 withFrame:CGRectMake(0, (size.height - width), width, width)];
+            [self updateAvatarView:self.vwAvatar2 atIndex:1 withFrame:CGRectMake((size.width - width), 0, width, width)];
             return;
         }
         
         if (self.totalCount == 3) {
             width = floorf(size.width * 0.5);
-            
-            self.vwAvatar1.user = users[0];
-            self.vwAvatar1.hidden = NO;
-            self.vwAvatar1.frame = CGRectMake((size.width - width) * 0.5, 1.5, width, width);
-            [self.vwAvatar1 setNeedsDisplay];
-            
-            self.vwAvatar2.user = users[1];
-            self.vwAvatar2.hidden = NO;
-            self.vwAvatar2.frame = CGRectMake(0, (size.height - width) - 1.5, width, width);
-            [self.vwAvatar2 setNeedsDisplay];
-            
-            self.vwAvatar3.user = users[2];
-            self.vwAvatar3.hidden = NO;
-            self.vwAvatar3.frame = CGRectMake((size.width - width), (size.height - width) - 1.5, width, width);
-            [self.vwAvatar3 setNeedsDisplay];
-            
+            [self updateAvatarView:self.vwAvatar1 atIndex:0 withFrame:CGRectMake((size.width - width) * 0.5, 1.5, width, width)];
+            [self updateAvatarView:self.vwAvatar2 atIndex:1 withFrame:CGRectMake(0, (size.height - width) - 1.5, width, width)];
+            [self updateAvatarView:self.vwAvatar3 atIndex:2 withFrame:CGRectMake((size.width - width), (size.height - width) - 1.5, width, width)];
             return;
         }
         
         width = floorf(size.width * 0.5);
-        
-        self.vwAvatar1.user = users[0];
-        self.vwAvatar1.hidden = NO;
-        self.vwAvatar1.frame = CGRectMake(0, 0, width, width);
-        [self.vwAvatar1 setNeedsDisplay];
-        
-        self.vwAvatar2.user = users[1];
-        self.vwAvatar2.hidden = NO;
-        self.vwAvatar2.frame = CGRectMake((size.width - width), 0, width, width);
-        [self.vwAvatar2 setNeedsDisplay];
-        
-        self.vwAvatar3.user = users[2];
-        self.vwAvatar3.hidden = NO;
-        self.vwAvatar3.frame = CGRectMake(0, (size.height - width), width, width);
-        [self.vwAvatar3 setNeedsDisplay];
-        
-        self.vwAvatar4.user = users[3];
-        self.vwAvatar4.hidden = NO;
-        self.vwAvatar4.frame = CGRectMake((size.width - width), (size.height - width), width, width);
-        [self.vwAvatar4 setNeedsDisplay];
+        [self updateAvatarView:self.vwAvatar1 atIndex:0 withFrame:CGRectMake(0, 0, width, width)];
+        [self updateAvatarView:self.vwAvatar2 atIndex:1 withFrame:CGRectMake((size.width - width), 0, width, width)];
+        [self updateAvatarView:self.vwAvatar3 atIndex:2 withFrame:CGRectMake(0, (size.height - width), width, width)];
+        [self updateAvatarView:self.vwAvatar4 atIndex:3 withFrame:CGRectMake((size.width - width), (size.height - width), width, width)];
+    }
+}
+
+- (void)updateAvatarView:(DBAvatarView *)avatarView atIndex:(NSInteger)index withFrame:(CGRect)frame {
+    DBChatAvatarState avatarState = [self.chatAvatarDataSource stateForAvatarAtIndex:index inChatAvatarUserView:self];
+    avatarView.avatarStateColor = [self statusColorForState:avatarState];
+    avatarView.avatarImage = [self.chatAvatarDataSource imageForAvatarAtIndex:index inChatAvatarUserView:self];
+    avatarView.hidden = NO;
+    avatarView.frame = frame;
+    [avatarView setNeedsDisplay];
+}
+
+- (UIColor *)statusColorForState:(DBChatAvatarState)state {
+    switch (state) {
+        case DBChatAvatarStateOffline: return [UIColor colorWithRGB:0xE46663];
+        case DBChatAvatarStateOnline: return [UIColor colorWithRGB:0x91D66E];
     }
 }
 
