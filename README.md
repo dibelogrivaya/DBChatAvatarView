@@ -2,9 +2,9 @@
 
 Sample for DBChatAvatarView - a control, which allow you to create group avatar for a chat.
 
+## Screenshot
 
 ![Sample screen](https://github.com/medinaonly/DBChatAvatarSample/blob/master/Screens/SampleScreen.png)
-
 
 [Show on the CocoaControls](https://www.cocoacontrols.com/controls/dbchatavatarview)
 
@@ -16,7 +16,7 @@ Copy files `DBChatAvatarView`, `DBAvatarView` and category `UIColor+HEX` into yo
 
 * Create a new DBChatAvatarView with Storyboards or via code.
 
-* Import `DBChatAvatarView.h` in your cell.
+* Import `DBChatAvatarView.h` in your view.
 
 ```objc
 DBChatAvatarView *chatAvatarView = [[DBChatAvatarView alloc] initWithFrame:frame];
@@ -31,6 +31,8 @@ DBChatAvatarView *chatAvatarView = [[DBChatAvatarView alloc] initWithFrame:frame
 - (NSInteger)numberOfUsersInChatAvatarView:(DBChatAvatarView *)chatAvatarView;
 - (DBChatAvatarState)stateForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarUserView:(DBChatAvatarView *)chatAvatarView;
 - (UIImage *)imageForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarUserView:(DBChatAvatarView *)chatAvatarView;
+
+@end
 
 ```
 
