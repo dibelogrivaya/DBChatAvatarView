@@ -14,15 +14,16 @@ Copy files `DBChatAvatarView`, `DBAvatarView` and category `UIColor+HEX` into yo
 
 ## Usage
 
-Create a new DBChatAvatarView with Storyboards or via code.
-Import `DBChatAvatarView.h` in your cell
+* Create a new DBChatAvatarView with Storyboards or via code.
+
+* Import `DBChatAvatarView.h` in your cell.
 
 ```objc
 DBChatAvatarView *chatAvatarView = [[DBChatAvatarView alloc] initWithFrame:frame];
 [self.view addSubview:chatAvatarView];
 ```
 
-Implement protocol `DBChatAvatarViewDataSource`
+* Implement protocol `DBChatAvatarViewDataSource`
 
 ```objc
 @protocol DBChatAvatarViewDataSource <NSObject>
@@ -33,7 +34,7 @@ Implement protocol `DBChatAvatarViewDataSource`
 
 ```
 
-Reload
+* Reload
 
 ```objc
 
