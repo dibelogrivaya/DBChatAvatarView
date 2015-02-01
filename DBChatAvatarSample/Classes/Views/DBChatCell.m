@@ -57,12 +57,12 @@ static const CGFloat kCellHeight = 70.f;
     return _chat.users.count;
 }
 
-- (DBChatAvatarState)stateForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarUserView:(DBChatAvatarView *)chatAvatarView {
+- (DBChatAvatarState)stateForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView {
     DBUser *user = _chat.users[avatarIndex];
     return user.isOnline ? DBChatAvatarStateOnline : DBChatAvatarStateOffline;
 }
 
-- (UIImage *)imageForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarUserView:(DBChatAvatarView *)chatAvatarView {
+- (UIImage *)imageForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView {
     DBUser *user = _chat.users[avatarIndex];
     return (user.avatar != nil && [user.avatar stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length > 0) ? [UIImage imageNamed:user.avatar] : [UIImage defaultUserPlaceholder];
 }
