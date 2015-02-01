@@ -14,9 +14,8 @@ Copy files `DBChatAvatarView`, `DBAvatarView` and category `UIColor+HEX` into yo
 
 ## Usage
 
-* Create a new DBChatAvatarView with Storyboards or via code.
-
 * Import `DBChatAvatarView.h` in your view.
+* Create a new DBChatAvatarView with Storyboards or via code.
 
 ```objc
 DBChatAvatarView *chatAvatarView = [[DBChatAvatarView alloc] initWithFrame:frame];
