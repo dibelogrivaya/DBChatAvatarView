@@ -110,9 +110,9 @@ static const NSInteger kMaxVisibleAvatar = 4;
 }
 
 - (void)updateAvatarView:(DBAvatarView *)avatarView atIndex:(NSInteger)index withFrame:(CGRect)frame {
-    DBChatAvatarState avatarState = [self.chatAvatarDataSource stateForAvatarAtIndex:index inChatAvatarUserView:self];
+    DBChatAvatarState avatarState = [self.chatAvatarDataSource stateForAvatarAtIndex:index inChatAvatarView:self];
     avatarView.avatarStateColor = [self statusColorForState:avatarState];
-    avatarView.avatarImage = [self.chatAvatarDataSource imageForAvatarAtIndex:index inChatAvatarUserView:self];
+    avatarView.avatarImage = [self.chatAvatarDataSource imageForAvatarAtIndex:index inChatAvatarView:self];
     avatarView.hidden = NO;
     avatarView.frame = frame;
     [avatarView setNeedsDisplay];
