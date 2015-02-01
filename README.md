@@ -28,8 +28,8 @@ DBChatAvatarView *chatAvatarView = [[DBChatAvatarView alloc] initWithFrame:frame
 @protocol DBChatAvatarViewDataSource <NSObject>
 
 - (NSInteger)numberOfUsersInChatAvatarView:(DBChatAvatarView *)chatAvatarView;
-- (DBChatAvatarState)stateForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarUserView:(DBChatAvatarView *)chatAvatarView;
-- (UIImage *)imageForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarUserView:(DBChatAvatarView *)chatAvatarView;
+- (DBChatAvatarState)stateForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView;
+- (UIImage *)imageForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView;
 
 @end
 
