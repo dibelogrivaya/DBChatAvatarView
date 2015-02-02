@@ -28,10 +28,6 @@
     return self;
 }
 
-- (void)awakeFromNib {
-    [self baseInit];
-}
-
 - (void)baseInit {
     self.backgroundColor = [UIColor clearColor];
 }
