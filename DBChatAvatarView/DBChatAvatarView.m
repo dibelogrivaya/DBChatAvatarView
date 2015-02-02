@@ -42,10 +42,6 @@ static const NSInteger kMaxVisibleAvatar = 4;
     return self;
 }
 
-- (void)awakeFromNib {
-    [self baseInit];
-}
-
 - (void)baseInit {
     self.totalCount = 0;
     self.backgroundColor = [UIColor clearColor];
