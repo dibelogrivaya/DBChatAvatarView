@@ -43,7 +43,6 @@ static const NSInteger kMaxVisibleAvatar = 4;
 }
 
 - (void)baseInit {
-    self.totalCount = 0;
     self.backgroundColor = [UIColor clearColor];
     
     self.avatarLayers = @[];
@@ -59,6 +58,8 @@ static const NSInteger kMaxVisibleAvatar = 4;
         [self.layer addSublayer:statusLayer];
         self.statusLayers = [self.statusLayers arrayByAddingObject:statusLayer];
     }
+    
+    [self reset];
 }
 
 - (void)reset {
