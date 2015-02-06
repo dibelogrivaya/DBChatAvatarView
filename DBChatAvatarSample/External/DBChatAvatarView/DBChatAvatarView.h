@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, DBChatAvatarState) {
 
 - (NSInteger)numberOfUsersInChatAvatarView:(DBChatAvatarView *)chatAvatarView;
 - (DBChatAvatarState)stateForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView;
-- (UIImage *)imageForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView;
+- (id)imageSourceForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView;
 
 @end
 
@@ -28,5 +28,6 @@ typedef NS_ENUM(NSInteger, DBChatAvatarState) {
 @property (weak, nonatomic) id <DBChatAvatarViewDataSource> chatAvatarDataSource;
 
 - (void)reloadAvatars;
+- (void)reset;
 
 @end
