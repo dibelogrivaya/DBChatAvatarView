@@ -10,6 +10,7 @@
 @class DBChatAvatarView;
 
 typedef NS_ENUM(NSInteger, DBChatAvatarState) {
+    DBChatAvatarStateNone,
     DBChatAvatarStateOffline,
     DBChatAvatarStateOnline
 };
