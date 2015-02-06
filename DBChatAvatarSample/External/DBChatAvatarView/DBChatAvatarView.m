@@ -75,6 +75,8 @@ static const NSInteger kMaxVisibleAvatar = 4;
 }
    
 - (void)reloadAvatars {
+    [self reset];
+    
     NSInteger usersCount = [self.chatAvatarDataSource numberOfUsersInChatAvatarView:self];
     self.totalCount = MIN(kMaxVisibleAvatar, usersCount);
     
