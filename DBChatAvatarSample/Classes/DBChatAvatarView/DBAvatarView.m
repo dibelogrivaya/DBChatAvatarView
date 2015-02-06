@@ -28,10 +28,6 @@
     return self;
 }
 
-- (void)awakeFromNib {
-    [self baseInit];
-}
-
 - (void)baseInit {
     self.backgroundColor = [UIColor clearColor];
 }
@@ -73,23 +69,25 @@
     
     CGContextRestoreGState(contextRef);
     CGContextSetLineWidth(contextRef, kBorderWidth / 2);
-    CGContextSetStrokeColorWithColor(contextRef, [UIColor colorWithWhite:.9f alpha:.9f].CGColor);
+    CGContextSetStrokeColorWithColor(contextRef, [UIColor colorWithWhite:.7f alpha:.9f].CGColor);
     CGContextMoveToPoint(contextRef, 0, 0);
     CGContextAddEllipseInRect(contextRef, imageRect);
     CGContextStrokePath(contextRef);
-    
-    CGContextRestoreGState(contextRef);
-    CGContextSaveGState(contextRef);
-    CGContextSetFillColorWithColor(contextRef, _avatarStateColor.CGColor);
-    CGContextAddEllipseInRect(contextRef, statusRect);
-    CGContextFillPath(contextRef);
-    
-    CGContextRestoreGState(contextRef);
-    CGContextSaveGState(contextRef);
-    CGContextSetStrokeColorWithColor(contextRef, [UIColor whiteColor].CGColor);
-    CGContextSetLineWidth(contextRef, kBorderWidth);
-    CGContextMoveToPoint(contextRef, 0, 0);
-    CGContextAddEllipseInRect(contextRef, statusRect);
+
+    if (_avatarStateColor != nil) {
+        CGContextRestoreGState(contextRef);
+        CGContextSaveGState(contextRef);
+        CGContextSetFillColorWithColor(contextRef, _avatarStateColor.CGColor);
+        CGContextAddEllipseInRect(contextRef, statusRect);
+        CGContextFillPath(contextRef);
+        
+        CGContextRestoreGState(contextRef);
+        CGContextSaveGState(contextRef);
+        CGContextSetStrokeColorWithColor(contextRef, [UIColor whiteColor].CGColor);
+        CGContextSetLineWidth(contextRef, kBorderWidth);
+        CGContextMoveToPoint(contextRef, 0, 0);
+        CGContextAddEllipseInRect(contextRef, statusRect);
+    }
     
     CGContextStrokePath(contextRef);
     CGContextRestoreGState(contextRef);

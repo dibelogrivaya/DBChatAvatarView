@@ -42,10 +42,6 @@ static const NSInteger kMaxVisibleAvatar = 4;
     return self;
 }
 
-- (void)awakeFromNib {
-    [self baseInit];
-}
-
 - (void)baseInit {
     self.totalCount = 0;
     self.backgroundColor = [UIColor clearColor];
@@ -122,6 +118,7 @@ static const NSInteger kMaxVisibleAvatar = 4;
     switch (state) {
         case DBChatAvatarStateOffline: return [UIColor colorWithRGB:0xE46663];
         case DBChatAvatarStateOnline: return [UIColor colorWithRGB:0x91D66E];
+        case DBChatAvatarStateNone: return nil;
     }
 }
 
