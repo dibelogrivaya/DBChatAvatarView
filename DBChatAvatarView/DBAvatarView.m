@@ -30,6 +30,7 @@
 
 - (void)baseInit {
     self.backgroundColor = [UIColor clearColor];
+    _avatarStateColor = nil;
 }
 
 - (void)drawRect:(CGRect)rect {
