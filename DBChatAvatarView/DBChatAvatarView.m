@@ -118,6 +118,7 @@ static const NSInteger kMaxVisibleAvatar = 4;
     switch (state) {
         case DBChatAvatarStateOffline: return [UIColor colorWithRGB:0xE46663];
         case DBChatAvatarStateOnline: return [UIColor colorWithRGB:0x91D66E];
+        case DBChatAvatarStateNone: return nil;
     }
 }
 
