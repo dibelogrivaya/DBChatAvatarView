@@ -1,7 +1,6 @@
 //
 //  DBChatAvatarView.m
 //
-//  Created by Diana Belogrivaya on 31/01/2015.
 //  Copyright (c) 2015 Diana Belogrivaya. All rights reserved.
 //
 
@@ -9,8 +8,8 @@
 
 #import "UIColor+HEX.h"
 
-#import "DBStatusLayer.h"
-#import "DBAvatarLayer.h"
+#import "DBStatusView.h"
+#import "DBAvatarView.h"
 
 static const NSInteger kMaxVisibleAvatar = 4;
 
@@ -18,8 +17,8 @@ static const NSInteger kMaxVisibleAvatar = 4;
 
 @property (assign, nonatomic) NSInteger totalCount;
 
-@property (strong, nonatomic) NSArray *statusLayers;
-@property (strong, nonatomic) NSArray *avatarLayers;
+@property (strong, nonatomic) NSArray *statusViews;
+@property (strong, nonatomic) NSArray *avatarViews;
 
 @end
 
@@ -45,18 +44,18 @@ static const NSInteger kMaxVisibleAvatar = 4;
 - (void)baseInit {
     self.backgroundColor = [UIColor clearColor];
     
-    self.avatarLayers = @[];
+    self.avatarViews = @[];
     for (int i = 0; i < 4; i++) {
-        DBAvatarLayer *avatarLayer = [[DBAvatarLayer alloc] init];
-        [self.layer addSublayer:avatarLayer];
-        self.avatarLayers = [self.avatarLayers arrayByAddingObject:avatarLayer];
+        DBAvatarView *avatarView = [[DBAvatarView alloc] init];
+        [self addSubview:avatarView];
+        self.avatarViews = [self.avatarViews arrayByAddingObject:avatarView];
     }
     
-    self.statusLayers = @[];
+    self.statusViews = @[];
     for (int i = 0; i < 4; i++) {
-        DBStatusLayer *statusLayer = [[DBStatusLayer alloc] init];
-        [self.layer addSublayer:statusLayer];
-        self.statusLayers = [self.statusLayers arrayByAddingObject:statusLayer];
+        DBStatusView *statusView = [[DBStatusView alloc] init];
+        [self addSubview:statusView];
+        self.statusViews = [self.statusViews arrayByAddingObject:statusView];
     }
     
     [self reset];
@@ -65,12 +64,12 @@ static const NSInteger kMaxVisibleAvatar = 4;
 - (void)reset {
     self.totalCount = 0;
     
-    for (DBAvatarLayer *avatarLayer in self.avatarLayers) {
-        [avatarLayer reset];
+    for (DBAvatarView *avatarView in self.avatarViews) {
+        [avatarView reset];
     }
     
-    for (DBStatusLayer *statusLayer in self.statusLayers) {
-        [statusLayer reset];
+    for (DBStatusView *statusView in self.statusViews) {
+        [statusView reset];
     }
 }
    
@@ -92,7 +91,7 @@ static const NSInteger kMaxVisibleAvatar = 4;
         
         if (self.totalCount == 2) {
             width = floorf(size.width * 0.7);
-            [self updateAvatarViewAtIndex:0 withFrame:CGRectMake(0, (size.height - width), width, width) zPosition:1];
+            [self updateAvatarViewAtIndex:0 withFrame:CGRectMake(0, (size.height - width), width, width)];
             [self updateAvatarViewAtIndex:1 withFrame:CGRectMake((size.width - width), 0, width, width)];
             return;
         }
@@ -116,32 +115,22 @@ static const NSInteger kMaxVisibleAvatar = 4;
 }
 
 - (void)updateAvatarViewAtIndex:(NSInteger)index withFrame:(CGRect)frame {
-    [self updateAvatarViewAtIndex:index withFrame:frame zPosition:0.f];
-}
-
-- (void)updateAvatarViewAtIndex:(NSInteger)index withFrame:(CGRect)frame zPosition:(CGFloat)zPosition {
-    DBAvatarLayer *avatarLayer = self.avatarLayers[index];
-    avatarLayer.hidden = NO;
-    avatarLayer.frame = frame;
-    avatarLayer.zPosition = zPosition;
+    DBAvatarView *avatarView = self.avatarViews[index];
+    avatarView.hidden = NO;
+    avatarView.frame = frame;
     
-    id imageSource = [self.chatAvatarDataSource imageSourceForAvatarAtIndex:index inChatAvatarView:self];
-    if ([imageSource isKindOfClass:[UIImage class]]) {
-        [avatarLayer setImage:imageSource];
-    } else if ([imageSource isKindOfClass:[NSString class]]) {
-        [avatarLayer setImageWithURLString:imageSource];
-    } else {
-        [avatarLayer setImage:nil];
-    }
+    UIImage *image = [self.chatAvatarDataSource imageForAvatarAtIndex:index inChatAvatarView:self];
+    [avatarView setImage:image];
     
     DBChatAvatarState state = [self.chatAvatarDataSource stateForAvatarAtIndex:index inChatAvatarView:self];
-    DBStatusLayer *statusLayer = self.statusLayers[index];
+    DBStatusView *statusView = self.statusViews[index];
+    statusView.borderScale = (float)1/self.totalCount;
     
-    CGFloat kStatusViewSide = CGRectGetWidth(avatarLayer.frame) / 3.5;
-    CGRect statusRect = CGRectMake(avatarLayer.frame.origin.x + avatarLayer.frame.size.width - kStatusViewSide - 1.f, avatarLayer.frame.origin.y + avatarLayer.frame.size.height - kStatusViewSide - 1.f, kStatusViewSide, kStatusViewSide);
-    statusLayer.frame = statusRect;
-    statusLayer.hidden = NO;
-    [statusLayer updateWithColor:[self statusColorForState:state]];
+    CGFloat kStatusViewSide = CGRectGetWidth(avatarView.frame) / 3.5;
+    CGRect statusRect = CGRectMake(avatarView.frame.origin.x + avatarView.frame.size.width - kStatusViewSide, avatarView.frame.origin.y + avatarView.frame.size.height - kStatusViewSide - 1.f, kStatusViewSide, kStatusViewSide);
+    statusView.frame = statusRect;
+    statusView.hidden = NO;
+    [statusView setStatusColor:[self statusColorForState:state]];
 }
 
 - (UIColor *)statusColorForState:(DBChatAvatarState)state {

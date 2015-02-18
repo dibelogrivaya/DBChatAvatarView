@@ -62,11 +62,7 @@ static const CGFloat kCellHeight = 70.f;
     return user.isOnline ? DBChatAvatarStateOnline : DBChatAvatarStateOffline;
 }
 
-- (id)imageSourceForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView {
-//    if (arc4random_uniform(3) == 1) {
-//        return @"https://a.disquscdn.com/uploads/users/2437/5085/avatar92.jpg?1422730097";
-//    }
-    
+- (UIImage *)imageForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView {
     DBUser *user = _chat.users[avatarIndex];
     return (user.avatar != nil && [user.avatar stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length > 0) ? [UIImage imageNamed:user.avatar] : nil;
 }

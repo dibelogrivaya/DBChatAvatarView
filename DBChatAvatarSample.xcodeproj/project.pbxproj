@@ -16,13 +16,13 @@
 		26172A901A7D20DF006BA402 /* DBChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172A8F1A7D20DF006BA402 /* DBChatManager.m */; };
 		26172AA21A7D2F22006BA402 /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172AA11A7D2F22006BA402 /* UIColor+HEX.m */; };
 		26172AA61A7D3068006BA402 /* UIImage+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172AA51A7D3068006BA402 /* UIImage+Default.m */; };
-		268B3B251A84E9E40072596E /* DBAvatarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 268B3B001A84E9E40072596E /* DBAvatarLayer.m */; };
+		268B3B251A84E9E40072596E /* DBAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 268B3B001A84E9E40072596E /* DBAvatarView.m */; };
 		268B3B261A84E9E40072596E /* DBChatAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 268B3B021A84E9E40072596E /* DBChatAvatarView.m */; };
 		268B3B2F1A84E9E40072596E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 268B3B161A84E9E40072596E /* LaunchScreen.xib */; };
 		268B3B301A84E9E40072596E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268B3B181A84E9E40072596E /* Main.storyboard */; };
 		268B3B311A84E9E40072596E /* DBAvatars.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268B3B1A1A84E9E40072596E /* DBAvatars.xcassets */; };
 		268B3B321A84E9E40072596E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268B3B1B1A84E9E40072596E /* Images.xcassets */; };
-		268B3B351A84EFF20072596E /* DBStatusLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 268B3B341A84EFF20072596E /* DBStatusLayer.m */; };
+		268B3B351A84EFF20072596E /* DBStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 268B3B341A84EFF20072596E /* DBStatusView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,16 +45,16 @@
 		26172AA11A7D2F22006BA402 /* UIColor+HEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
 		26172AA41A7D3068006BA402 /* UIImage+Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Default.h"; sourceTree = "<group>"; };
 		26172AA51A7D3068006BA402 /* UIImage+Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Default.m"; sourceTree = "<group>"; };
-		268B3AFF1A84E9E40072596E /* DBAvatarLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAvatarLayer.h; sourceTree = "<group>"; };
-		268B3B001A84E9E40072596E /* DBAvatarLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAvatarLayer.m; sourceTree = "<group>"; };
+		268B3AFF1A84E9E40072596E /* DBAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAvatarView.h; sourceTree = "<group>"; };
+		268B3B001A84E9E40072596E /* DBAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAvatarView.m; sourceTree = "<group>"; };
 		268B3B011A84E9E40072596E /* DBChatAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBChatAvatarView.h; sourceTree = "<group>"; };
 		268B3B021A84E9E40072596E /* DBChatAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBChatAvatarView.m; sourceTree = "<group>"; };
 		268B3B171A84E9E40072596E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		268B3B191A84E9E40072596E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		268B3B1A1A84E9E40072596E /* DBAvatars.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DBAvatars.xcassets; sourceTree = "<group>"; };
 		268B3B1B1A84E9E40072596E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		268B3B331A84EFF20072596E /* DBStatusLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBStatusLayer.h; sourceTree = "<group>"; };
-		268B3B341A84EFF20072596E /* DBStatusLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStatusLayer.m; sourceTree = "<group>"; };
+		268B3B331A84EFF20072596E /* DBStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBStatusView.h; sourceTree = "<group>"; };
+		268B3B341A84EFF20072596E /* DBStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStatusView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,10 +188,10 @@
 			children = (
 				268B3B011A84E9E40072596E /* DBChatAvatarView.h */,
 				268B3B021A84E9E40072596E /* DBChatAvatarView.m */,
-				268B3AFF1A84E9E40072596E /* DBAvatarLayer.h */,
-				268B3B001A84E9E40072596E /* DBAvatarLayer.m */,
-				268B3B331A84EFF20072596E /* DBStatusLayer.h */,
-				268B3B341A84EFF20072596E /* DBStatusLayer.m */,
+				268B3AFF1A84E9E40072596E /* DBAvatarView.h */,
+				268B3B001A84E9E40072596E /* DBAvatarView.m */,
+				268B3B331A84EFF20072596E /* DBStatusView.h */,
+				268B3B341A84EFF20072596E /* DBStatusView.m */,
 			);
 			path = DBChatAvatarView;
 			sourceTree = "<group>";
@@ -281,12 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				26172A8A1A7D2011006BA402 /* DBChatsController.m in Sources */,
-				268B3B351A84EFF20072596E /* DBStatusLayer.m in Sources */,
+				268B3B351A84EFF20072596E /* DBStatusView.m in Sources */,
 				26172A8D1A7D203B006BA402 /* DBChatCell.m in Sources */,
 				26172AA61A7D3068006BA402 /* UIImage+Default.m in Sources */,
 				268B3B261A84E9E40072596E /* DBChatAvatarView.m in Sources */,
 				26172A841A7D1DD7006BA402 /* DBChat.m in Sources */,
-				268B3B251A84E9E40072596E /* DBAvatarLayer.m in Sources */,
+				268B3B251A84E9E40072596E /* DBAvatarView.m in Sources */,
 				26172A591A7D1D39006BA402 /* AppDelegate.m in Sources */,
 				26172A561A7D1D39006BA402 /* main.m in Sources */,
 				26172A871A7D1DE3006BA402 /* DBUser.m in Sources */,
@@ -351,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -386,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -397,10 +397,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DBChatAvatarSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -408,10 +410,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DBChatAvatarSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

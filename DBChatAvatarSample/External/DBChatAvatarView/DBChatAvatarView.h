@@ -1,7 +1,6 @@
 //
 //  DBChatAvatarView.h
 //
-//  Created by Diana Belogrivaya on 31/01/2015.
 //  Copyright (c) 2015 Diana Belogrivaya. All rights reserved.
 //
 
@@ -19,7 +18,7 @@ typedef NS_ENUM(NSInteger, DBChatAvatarState) {
 
 - (NSInteger)numberOfUsersInChatAvatarView:(DBChatAvatarView *)chatAvatarView;
 - (DBChatAvatarState)stateForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView;
-- (id)imageSourceForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView;
+- (UIImage *)imageForAvatarAtIndex:(NSInteger)avatarIndex inChatAvatarView:(DBChatAvatarView *)chatAvatarView;
 
 @end
 
