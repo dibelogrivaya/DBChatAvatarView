@@ -41,6 +41,10 @@ static const CGFloat kCellHeight = 70.f;
     self.vwAvatarView.chatAvatarDataSource = self;
 }
 
+- (void)prepareForReuse {
+    [self.vwAvatarView reset];
+}
+
 - (void)setChat:(DBChat *)chat {
     _chat = chat;
     
