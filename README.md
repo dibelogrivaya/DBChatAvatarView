@@ -9,7 +9,9 @@ Sample for DBChatAvatarView - a control, which allow you to create group avatar 
 
 ## Installation
 
-Pod 'DBChatAvatarView'
+```objc
+pod "DBChatAvatarView" 
+```
 
 ## Usage
 
