@@ -1,6 +1,6 @@
 # DBChatAvatarSample
 
-Sample for DBChatAvatarView - a control, which allow you to create group avatar for a chat.
+The control, which allow you to create group avatar for a chat.
 
 ## Screenshot
 
