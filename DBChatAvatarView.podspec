@@ -6,7 +6,8 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/dibelogrivaya"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "Diana Belogrivaya" => "diana.belogrivaya@gmail.com" }
-  s.source           = { :http => 'https://github.com/dibelogrivaya/DBChatAvatarView.git' }
+  s.source           = { :http => 'https://github.com/dibelogrivaya/DBChatAvatarView/archive/1.2.zip' }
+  s.source_files     = '**/*.{h,m}'
   s.requires_arc     = true
   s.source_files     = 'DBChatAvatarView'
   s.platform         = :ios, "8.0"
