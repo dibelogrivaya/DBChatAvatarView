@@ -9,7 +9,9 @@ Sample for DBChatAvatarView - a control, which allow you to create group avatar 
 
 ## Installation
 
-Copy files `DBChatAvatarView`, `DBAvatarView` and category `UIColor+HEX` into your project.
+```objc
+pod "DBChatAvatarView" 
+```
 
 ## Usage
 
@@ -44,7 +46,7 @@ DBChatAvatarView *chatAvatarView = [[DBChatAvatarView alloc] initWithFrame:frame
 
 ## Requirements
 
-- iOS >= 7.0
+- iOS >= 8.0
 - ARC
 
 # License
