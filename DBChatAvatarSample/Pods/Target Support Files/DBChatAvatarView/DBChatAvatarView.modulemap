@@ -1,0 +1,6 @@
+framework module DBChatAvatarView {
+  umbrella header "DBChatAvatarView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D612DD565E0581F7AAB9DF665D368E3E"
-               BuildableName = "Pods_DBChatAvatarSample.framework"
-               BlueprintName = "Pods-DBChatAvatarSample"
+               BlueprintIdentifier = "1CE65FFB5D447046AD5261678CA8A80B"
+               BuildableName = "UIColor_Hex.framework"
+               BlueprintName = "UIColor+Hex"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D612DD565E0581F7AAB9DF665D368E3E"
-            BuildableName = "Pods_DBChatAvatarSample.framework"
-            BlueprintName = "Pods-DBChatAvatarSample"
+            BlueprintIdentifier = "1CE65FFB5D447046AD5261678CA8A80B"
+            BuildableName = "UIColor_Hex.framework"
+            BlueprintName = "UIColor+Hex"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

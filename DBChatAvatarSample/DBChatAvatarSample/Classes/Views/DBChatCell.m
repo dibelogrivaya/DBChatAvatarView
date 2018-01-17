@@ -10,8 +10,9 @@
 
 #import "DBChat.h"
 #import "DBUser.h"
-#import "DBChatAvatarView.h"
 #import "UIImage+Default.h"
+
+#import "DBChatAvatarView.h"
 
 static NSString* const kCellIdentifier = @"CHAT_CELL_IDENTIFIER";
 static const CGFloat kCellHeight = 70.f;

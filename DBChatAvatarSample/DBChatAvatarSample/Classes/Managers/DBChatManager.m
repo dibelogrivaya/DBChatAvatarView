@@ -47,7 +47,7 @@
         chatNames = @[
                       @"New York City Points of Interest",
                       @"World Health Organization",
-                      @"African and Asian Elephants",
+                      @"Best New York attractions for locals and tourists alike",
                       @"Computers"
                       ];
     });

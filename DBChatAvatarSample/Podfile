@@ -9,7 +9,7 @@ use_frameworks!
 
 target 'DBChatAvatarSample' do
 
-  pod 'DBChatAvatarView', :path => '../DBChatAvatarView/'
+  pod 'DBChatAvatarView', :git => 'git@github.com:dibelogrivaya/DBChatAvatarSample.git'
 
 end
 

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B30FE10B72F73198E3CAFC5A18635BA1'
-               BlueprintName = 'UIColor-Hex'
+               BlueprintIdentifier = '612106CE8F606CB64800BF334131B3E7'
+               BlueprintName = 'DBChatAvatarView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'UIColor-Hex.framework'>
+               BuildableName = 'DBChatAvatarView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
