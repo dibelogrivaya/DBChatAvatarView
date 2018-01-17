@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/dibelogrivaya"
   s.license          = 'MIT'
   s.author           = { "Diana Belogrivaya" => "diana.belogrivaya@gmail.com" }
-  s.source           = { :git => "git@github.com:dibelogrivaya/DBChatAvatarSample.git", :tag => s.version.to_s }
+  s.source           = { :http => "https://github.com/dibelogrivaya/DBChatAvatarSample.git", :tag => s.version.to_s }
   s.requires_arc     = true
   s.source_files     = 'DBChatAvatarView'
   s.ios.deployment_target = '8.0'
