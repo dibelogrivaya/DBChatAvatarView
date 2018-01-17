@@ -29,7 +29,6 @@ xcuserdata/
 *.dSYM
 
 *.xcworkspace
-!DBChatAvatarSample.xcworkspace
 
 # CocoaPods
 #
@@ -39,6 +38,7 @@ xcuserdata/
 #
 Pods/*
 Podfile.lock
+DBChatAvatarSample/Pods/*
 
 # Carthage
 #
