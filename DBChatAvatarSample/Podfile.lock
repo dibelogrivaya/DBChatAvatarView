@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DBChatAvatarView:
-    :commit: 49b6ad168ef424944b9119dd52744dcc65b1757e
+    :commit: 27e776b0ef7a78d2a7e3e6d854ded0383a13a1e8
     :git: git@github.com:dibelogrivaya/DBChatAvatarSample.git
 
 SPEC CHECKSUMS:

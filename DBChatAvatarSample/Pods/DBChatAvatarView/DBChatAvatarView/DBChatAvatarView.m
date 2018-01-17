@@ -6,10 +6,10 @@
 
 #import "DBChatAvatarView.h"
 
+//#import "UIColor+HEX.h"
+
 #import "DBStatusView.h"
 #import "DBAvatarView.h"
-
-#import "UIColor+Hex.h"
 
 static const NSInteger kMaxVisibleAvatar = 4;
 
@@ -132,11 +132,11 @@ static const NSInteger kMaxVisibleAvatar = 4;
 
 - (UIColor *)statusColorForState:(DBChatAvatarState)state {
     switch (state) {
-        case DBChatAvatarStateOffline: return [UIColor colorWithHex:0xE46663];
-        case DBChatAvatarStateOnline: return [UIColor colorWithHex:0x91D66E];
-        default: return [UIColor lightGrayColor];
+//        case DBChatAvatarStateOffline: return [UIColor colorWithRGB:0xE46663];
+//        case DBChatAvatarStateOnline: return [UIColor colorWithRGB:0x91D66E];
+        case DBChatAvatarStateNone: return nil;
+        default: return nil;
     }
-    return [UIColor lightGrayColor];
 }
 
 @end
