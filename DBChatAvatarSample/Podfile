@@ -1,0 +1,21 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+
+project 'DBChatAvatarSample'
+
+inhibit_all_warnings!
+use_frameworks!
+
+target 'DBChatAvatarSample' do
+
+  pod 'DBChatAvatarView', :path => '../DBChatAvatarView/'
+
+end
+
+post_install do |installer_representation|
+    puts("Update debug pod settings to speed up build time")
+    Dir.glob(File.join("Pods", "**", "Pods*{debug,Private}.xcconfig")).each do |file|
+        File.open(file, 'a') { |f| f.puts "\nDEBUG_INFORMATION_FORMAT = dwarf" }
+    end
+end

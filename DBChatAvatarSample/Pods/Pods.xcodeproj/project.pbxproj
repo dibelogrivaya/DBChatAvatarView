@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11FBB85D22AD3BE3534DB5E437CB40AE /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76DD010F689F8C440F0B8E98F09F0A /* UIColorHex.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		29D584747FB36AB355CDCEA31CA87B20 /* UIColor-Hex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7C710327688290CFFBD1C80BE27BA4 /* UIColor-Hex-dummy.m */; };
+		45DA02BD67B79EE5938500BDE987E09E /* Pods-DBChatAvatarSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 825DBFBAD0843CF713B91DA751A64C93 /* Pods-DBChatAvatarSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ED25F1AEDDBFEFC79E3CA910E9516D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8E86042DBE591FC22578D8804699DA88 /* Pods-DBChatAvatarSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D05618A7B31DF46483A455DF8CC4A6 /* Pods-DBChatAvatarSample-dummy.m */; };
+		ACE989689E71BB05980A65F2BE62CC22 /* UIColor-Hex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0441F62E014D802E882A4F4B6AE88BA1 /* UIColor-Hex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1720B46618C0BCA41087DE259765542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CD6E320BD2C27B1271864C5B20F3983 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B30FE10B72F73198E3CAFC5A18635BA1;
+			remoteInfo = "UIColor-Hex";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0441F62E014D802E882A4F4B6AE88BA1 /* UIColor-Hex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-umbrella.h"; sourceTree = "<group>"; };
+		1112F315CD1B8298FDA793FC068BF68B /* Pods-DBChatAvatarSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DBChatAvatarSample.modulemap"; sourceTree = "<group>"; };
+		2354D0BF57057ED839B702EC4F3F3290 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A75F3EFE9D3A8EE45F68D05C3D0D672 /* Pods-DBChatAvatarSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DBChatAvatarSample.debug.xcconfig"; sourceTree = "<group>"; };
+		4BA8AB108233689300FE38DFF6259116 /* Pods-DBChatAvatarSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DBChatAvatarSample-resources.sh"; sourceTree = "<group>"; };
+		5B754D783B44227E827BF0B77DADC48C /* Pods-DBChatAvatarSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DBChatAvatarSample-frameworks.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7DD47367150927609300D341C156C1C3 /* Pods-DBChatAvatarSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DBChatAvatarSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		81DCE02BF15807755DAA6C8C127636FC /* UIColor_Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIColor_Hex.framework; path = "UIColor-Hex.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		825DBFBAD0843CF713B91DA751A64C93 /* Pods-DBChatAvatarSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DBChatAvatarSample-umbrella.h"; sourceTree = "<group>"; };
+		85F92FBBE642CAEE0E262C18695A12AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C2BAF62FBE892444D7870CF4E9B498 /* UIColor-Hex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-prefix.pch"; sourceTree = "<group>"; };
+		8D7C710327688290CFFBD1C80BE27BA4 /* UIColor-Hex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D76DD010F689F8C440F0B8E98F09F0A /* UIColorHex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorHex.swift; path = Classes/UIColorHex.swift; sourceTree = "<group>"; };
+		B27DDC0F40D697AE06E1CD1F1B38EBA3 /* Pods-DBChatAvatarSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DBChatAvatarSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B8EB9B2CF4C83DEF9A5B7CB3373A6531 /* UIColor-Hex.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex.xcconfig"; sourceTree = "<group>"; };
+		C5D05618A7B31DF46483A455DF8CC4A6 /* Pods-DBChatAvatarSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DBChatAvatarSample-dummy.m"; sourceTree = "<group>"; };
+		E625906270F7EF9E7B81CF5F6966AF0C /* Pods_DBChatAvatarSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DBChatAvatarSample.framework; path = "Pods-DBChatAvatarSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8A259F1B3E950441742C829F77C01F /* Pods-DBChatAvatarSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DBChatAvatarSample.release.xcconfig"; sourceTree = "<group>"; };
+		F09ABFB4ACD90674174231F3A93DB958 /* UIColor-Hex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "UIColor-Hex.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36FF5F1D59FF1D8B7C94BF6205142F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED25F1AEDDBFEFC79E3CA910E9516D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938A45BB043C336D27DECD045B2419D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1720B46618C0BCA41087DE259765542 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2846341848DF520DB7F06D26B3095D0E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28575FAF97EB129E96FC1DBB99F5F597 /* Pods-DBChatAvatarSample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		28575FAF97EB129E96FC1DBB99F5F597 /* Pods-DBChatAvatarSample */ = {
+			isa = PBXGroup;
+			children = (
+				85F92FBBE642CAEE0E262C18695A12AD /* Info.plist */,
+				1112F315CD1B8298FDA793FC068BF68B /* Pods-DBChatAvatarSample.modulemap */,
+				B27DDC0F40D697AE06E1CD1F1B38EBA3 /* Pods-DBChatAvatarSample-acknowledgements.markdown */,
+				7DD47367150927609300D341C156C1C3 /* Pods-DBChatAvatarSample-acknowledgements.plist */,
+				C5D05618A7B31DF46483A455DF8CC4A6 /* Pods-DBChatAvatarSample-dummy.m */,
+				5B754D783B44227E827BF0B77DADC48C /* Pods-DBChatAvatarSample-frameworks.sh */,
+				4BA8AB108233689300FE38DFF6259116 /* Pods-DBChatAvatarSample-resources.sh */,
+				825DBFBAD0843CF713B91DA751A64C93 /* Pods-DBChatAvatarSample-umbrella.h */,
+				3A75F3EFE9D3A8EE45F68D05C3D0D672 /* Pods-DBChatAvatarSample.debug.xcconfig */,
+				EB8A259F1B3E950441742C829F77C01F /* Pods-DBChatAvatarSample.release.xcconfig */,
+			);
+			name = "Pods-DBChatAvatarSample";
+			path = "Target Support Files/Pods-DBChatAvatarSample";
+			sourceTree = "<group>";
+		};
+		2F0B08B3C5569D13532628EB6CD817B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2354D0BF57057ED839B702EC4F3F3290 /* Info.plist */,
+				F09ABFB4ACD90674174231F3A93DB958 /* UIColor-Hex.modulemap */,
+				B8EB9B2CF4C83DEF9A5B7CB3373A6531 /* UIColor-Hex.xcconfig */,
+				8D7C710327688290CFFBD1C80BE27BA4 /* UIColor-Hex-dummy.m */,
+				88C2BAF62FBE892444D7870CF4E9B498 /* UIColor-Hex-prefix.pch */,
+				0441F62E014D802E882A4F4B6AE88BA1 /* UIColor-Hex-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor-Hex";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C391E7DF0C026F77A5901230CA4C2274 /* Pods */,
+				7DEEA4821418E5944627BAA3F6E26ECF /* Products */,
+				2846341848DF520DB7F06D26B3095D0E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7DEEA4821418E5944627BAA3F6E26ECF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E625906270F7EF9E7B81CF5F6966AF0C /* Pods_DBChatAvatarSample.framework */,
+				81DCE02BF15807755DAA6C8C127636FC /* UIColor_Hex.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C391E7DF0C026F77A5901230CA4C2274 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0FCB7D5DBBB9A8510898BAD18EBD4DC /* UIColor-Hex */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E0FCB7D5DBBB9A8510898BAD18EBD4DC /* UIColor-Hex */ = {
+			isa = PBXGroup;
+			children = (
+				9D76DD010F689F8C440F0B8E98F09F0A /* UIColorHex.swift */,
+				2F0B08B3C5569D13532628EB6CD817B4 /* Support Files */,
+			);
+			name = "UIColor-Hex";
+			path = "UIColor-Hex";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		971B8576AE853C8FF63D6973D95935BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE989689E71BB05980A65F2BE62CC22 /* UIColor-Hex-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6BEC2200E19EB409A0CDAE955F0607D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45DA02BD67B79EE5938500BDE987E09E /* Pods-DBChatAvatarSample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F117387DE516CEBF50991CCF39E7B7E /* Pods-DBChatAvatarSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3448F38B558FE6E8163A392FFB9B9309 /* Build configuration list for PBXNativeTarget "Pods-DBChatAvatarSample" */;
+			buildPhases = (
+				9622DAE6E1C2CBAE3775F4787A45ECE3 /* Sources */,
+				938A45BB043C336D27DECD045B2419D4 /* Frameworks */,
+				D6BEC2200E19EB409A0CDAE955F0607D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A702E513F78B6C50C8558B26B9BD8664 /* PBXTargetDependency */,
+			);
+			name = "Pods-DBChatAvatarSample";
+			productName = "Pods-DBChatAvatarSample";
+			productReference = E625906270F7EF9E7B81CF5F6966AF0C /* Pods_DBChatAvatarSample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B30FE10B72F73198E3CAFC5A18635BA1 /* UIColor-Hex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 215F26A8DFCF08210404936D3B6CA071 /* Build configuration list for PBXNativeTarget "UIColor-Hex" */;
+			buildPhases = (
+				98D880B62BA9EE7026FB53F615573142 /* Sources */,
+				36FF5F1D59FF1D8B7C94BF6205142F7C /* Frameworks */,
+				971B8576AE853C8FF63D6973D95935BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIColor-Hex";
+			productName = "UIColor-Hex";
+			productReference = 81DCE02BF15807755DAA6C8C127636FC /* UIColor_Hex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7DEEA4821418E5944627BAA3F6E26ECF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F117387DE516CEBF50991CCF39E7B7E /* Pods-DBChatAvatarSample */,
+				B30FE10B72F73198E3CAFC5A18635BA1 /* UIColor-Hex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9622DAE6E1C2CBAE3775F4787A45ECE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E86042DBE591FC22578D8804699DA88 /* Pods-DBChatAvatarSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D880B62BA9EE7026FB53F615573142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29D584747FB36AB355CDCEA31CA87B20 /* UIColor-Hex-dummy.m in Sources */,
+				11FBB85D22AD3BE3534DB5E437CB40AE /* UIColorHex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A702E513F78B6C50C8558B26B9BD8664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor-Hex";
+			target = B30FE10B72F73198E3CAFC5A18635BA1 /* UIColor-Hex */;
+			targetProxy = 9CD6E320BD2C27B1271864C5B20F3983 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2897E2ADF68CC745802AB56B31BC9313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8EB9B2CF4C83DEF9A5B7CB3373A6531 /* UIColor-Hex.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex/UIColor-Hex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex/UIColor-Hex.modulemap";
+				PRODUCT_NAME = UIColor_Hex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		445E794168DA80E5515B2176DD6EA0BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8EB9B2CF4C83DEF9A5B7CB3373A6531 /* UIColor-Hex.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-Hex/UIColor-Hex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-Hex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor-Hex/UIColor-Hex.modulemap";
+				PRODUCT_NAME = UIColor_Hex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D10E92BDC45F630F2C9653CD6F2474F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A75F3EFE9D3A8EE45F68D05C3D0D672 /* Pods-DBChatAvatarSample.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DBChatAvatarSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DBChatAvatarSample/Pods-DBChatAvatarSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DBChatAvatarSample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CCF103FF36EFB5C931DFF4BBA9FCFF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8A259F1B3E950441742C829F77C01F /* Pods-DBChatAvatarSample.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DBChatAvatarSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DBChatAvatarSample/Pods-DBChatAvatarSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DBChatAvatarSample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		215F26A8DFCF08210404936D3B6CA071 /* Build configuration list for PBXNativeTarget "UIColor-Hex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445E794168DA80E5515B2176DD6EA0BC /* Debug */,
+				2897E2ADF68CC745802AB56B31BC9313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
+				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3448F38B558FE6E8163A392FFB9B9309 /* Build configuration list for PBXNativeTarget "Pods-DBChatAvatarSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D10E92BDC45F630F2C9653CD6F2474F /* Debug */,
+				CCF103FF36EFB5C931DFF4BBA9FCFF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
