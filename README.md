@@ -3,10 +3,10 @@
 The control, which allow you to create group avatar for chat.
 
 
-[![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20watchOS%20%7C%20tvOS%20%7C%20macOS-lightgrey.svg)](https://github.com/dibelogrivaya/DBChatAvatarView)
+[![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)](https://github.com/dibelogrivaya/DBChatAvatarView)
 [![Xcode](https://img.shields.io/badge/Xcode-9.0-blue.svg)](https://developer.apple.com/xcode)
 ![Downloads Month](https://img.shields.io/cocoapods/dm/DBChatAvatarView.svg)
-![Cocoapods](https://cocoapod-badges.herokuapp.com/v/HexColors/badge.png)
+![Cocoapods](https://cocoapod-badges.herokuapp.com/v/DBChatAvatarView/badge.png)
 
 ## Screenshot
 
