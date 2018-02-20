@@ -15,6 +15,7 @@ The control, which allow you to create group avatar for chat.
 ## Installation
 
 ```objc
+source 'git@github.com:dibelogrivaya/db-specs.git'
 pod "DBChatAvatarView" 
 ```
 
