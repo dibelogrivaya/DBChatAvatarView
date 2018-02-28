@@ -50,6 +50,3 @@ DBChatAvatarView *chatAvatarView = [[DBChatAvatarView alloc] initWithFrame:frame
 
 ```
 
-## License
-
-DBChatAvatarView is available under the MIT license. See the LICENSE file for more info.
