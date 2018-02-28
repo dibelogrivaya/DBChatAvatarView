@@ -7,6 +7,7 @@ The control, which allow you to create group avatar for chat.
 [![iOS](https://img.shields.io/badge/ios-%3E%3D8-orange.svg?style=flat)](https://github.com/dibelogrivaya/DBChatAvatarView)
 [![Xcode](https://img.shields.io/badge/Xcode-9.0-blue.svg?style=flat)](https://developer.apple.com/xcode)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat)](https://github.com/dibelogrivaya/DBChatAvatarView)
+[![Downloads](https://img.shields.io/github/downloads/atom/atom/latest/total.svg?style=flat)](https://github.com/dibelogrivaya/DBChatAvatarView)
 
 ## Screenshot
 
