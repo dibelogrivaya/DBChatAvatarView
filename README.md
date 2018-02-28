@@ -4,8 +4,7 @@ The control, which allow you to create group avatar for chat.
 
 
 [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)](https://github.com/dibelogrivaya/DBChatAvatarView)
-[![Xcode](https://img.shields.io/badge/Xcode-9.0-blue.svg)](https://developer.apple.com/xcode)
-![Downloads Month](https://img.shields.io/cocoapods/dm/DBChatAvatarView.svg)
+[![Xcode](https://img.shields.io/badge/Xcode-8.0-blue.svg)](https://developer.apple.com/xcode)
 
 ## Screenshot
 
@@ -49,11 +48,6 @@ DBChatAvatarView *chatAvatarView = [[DBChatAvatarView alloc] initWithFrame:frame
 [chatAvatarView reloadAvatars];
 
 ```
-
-## Requirements
-
-- iOS >= 8.0
-- ARC
 
 # License
 
